@@ -1,0 +1,8 @@
+
+Daily Emails Alert Scripts:
+
+Each beach available for monitoring on the website will have its' respective script that is run each morning... For now, only including Nantasket as an example.
+
+If a registered user has a particular beach selected & the beach satisfies the criteria for good waves, they will get an email notification via its' corresponding script.
+
+If the surf conditions do not meet the criteria for good surfing, no email will be sent.
