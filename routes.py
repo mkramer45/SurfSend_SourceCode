@@ -46,12 +46,11 @@ app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'surfsendhelp@gmail.com'
-app.config['MAIL_PASSWORD'] = 'CelticsPlayer123!'
+app.config['MAIL_PASSWORD'] = 'password_removed_from_repo'
 mail = Mail(app)
 beaches = []
 
 
-#-------------------------CLASS BLOCK BEGIN----------------------------------------------
 class RequestResetForm(FlaskForm):
 	email = StringField('Email',
 						validators=[DataRequired(), Email()])
@@ -216,7 +215,7 @@ def forgot():
 			mailserver.starttls()
 			# re-identify ourselves as an encrypted connection
 			mailserver.ehlo()
-			mailserver.login('surfsendhelp@gmail.com', 'CelticsPlayer123!')
+			mailserver.login('surfsendhelp@gmail.com', 'password_removed_from_repo')
 
 			mailserver.sendmail('surfsendhelp@gmail.com',email_list,msg.as_string())
 
@@ -275,7 +274,7 @@ def reset():
 			mailserver.starttls()
 			# re-identify ourselves as an encrypted connection
 			mailserver.ehlo()
-			mailserver.login('surfsendhelp@gmail.com', 'CelticsPlayer123!')
+			mailserver.login('surfsendhelp@gmail.com', 'password_removed_from_repo')
 
 			mailserver.sendmail('surfsendhelp@gmail.com',email_list,msg.as_string())
 
@@ -3909,7 +3908,7 @@ def register():
 		mailserver.starttls()
 		# re-identify ourselves as an encrypted connection
 		mailserver.ehlo()
-		mailserver.login('surfsendhelp@gmail.com', 'CelticsPlayer123!')
+		mailserver.login('surfsendhelp@gmail.com', 'password_removed_from_repo')
 
 		mailserver.sendmail('surfsendhelp@gmail.com',email_list,msg.as_string())
 
